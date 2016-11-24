@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14B25" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PNCCategory" representedClassName="PNCCategory" syncable="YES">
+        <attribute name="category_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="menu_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="recipe_tag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updated_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="PNCRecipe" syncable="YES"/>
+    </entity>
+    <entity name="PNCImage" representedClassName="PNCImage" syncable="YES">
+        <attribute name="image_blob" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PNCRecipe" inverseName="images" inverseEntity="PNCRecipe" syncable="YES"/>
+    </entity>
+    <entity name="PNCRecipe" representedClassName="PNCRecipe" syncable="YES">
+        <attribute name="category_tags" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cooking_level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="cooking_time" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="date_posted" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="facebook_post_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image1x" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="ingredients" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name_long" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="preparation_time" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="recipe_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recipe_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recipe_short_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serving_tips" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="steps" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total_time" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="updated_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="yields" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="PNCImage" inverseName="recipe" inverseEntity="PNCImage" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PNCCategory" positionX="-513" positionY="23" width="128" height="148"/>
+        <element name="PNCImage" positionX="-315" positionY="312" width="128" height="88"/>
+        <element name="PNCRecipe" positionX="-63" positionY="-18" width="128" height="388"/>
+    </elements>
+</model>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DashboardItems</key>
+	<array>
+		<dict>
+			<key>header</key>
+			<string>Recently added</string>
+			<key>items</key>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>1</string>
+					<key>description</key>
+					<string>Macher Jhol</string>
+					<key>image1x</key>
+					<string>297565</string>
+					<key>details_file</key>
+					<string>item1.plist</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<string>2</string>
+					<key>description</key>
+					<string>Macher Jhol2</string>
+					<key>image1x</key>
+					<string>297565</string>
+					<key>details_file</key>
+					<string>item2.plist</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

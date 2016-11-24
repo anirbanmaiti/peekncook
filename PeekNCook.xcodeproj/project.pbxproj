@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		732B9CCB1A304EF600E607C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 732B9CCA1A304EF600E607C6 /* main.m */; };
+		732B9CCE1A304EF600E607C6 /* PNCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 732B9CCD1A304EF600E607C6 /* PNCAppDelegate.m */; };
+		732B9CD11A304EF600E607C6 /* PNCDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 732B9CD01A304EF600E607C6 /* PNCDashboardViewController.m */; };
+		732B9CD41A304EF600E607C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732B9CD21A304EF600E607C6 /* Main.storyboard */; };
+		732B9CD61A304EF600E607C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732B9CD51A304EF600E607C6 /* Images.xcassets */; };
+		732B9CD91A304EF600E607C6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 732B9CD71A304EF600E607C6 /* LaunchScreen.xib */; };
+		732B9CE51A304EF600E607C6 /* PeekNCookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 732B9CE41A304EF600E607C6 /* PeekNCookTests.m */; };
+		732B9CF71A306B8300E607C6 /* PNCDashboardCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 732B9CF61A306B8300E607C6 /* PNCDashboardCollectionView.m */; };
+		732B9CFB1A32737800E607C6 /* PNCDashboardDefaultCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 732B9CFA1A32737800E607C6 /* PNCDashboardDefaultCollectionViewCell.m */; };
+		732B9D361A32E9F700E607C6 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9D351A32E9F700E607C6 /* Quickblox.framework */; };
+		732B9D391A32EADA00E607C6 /* PNCCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 732B9D371A32EADA00E607C6 /* PNCCoreDataModel.xcdatamodeld */; };
+		732B9D3D1A32F11E00E607C6 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9D3C1A32F11E00E607C6 /* libxml2.2.dylib */; };
+		732B9D3F1A32F2FD00E607C6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9D3E1A32F2FD00E607C6 /* CFNetwork.framework */; };
+		732B9D411A32F31800E607C6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9D401A32F31800E607C6 /* Security.framework */; };
+		732B9D431A32F32700E607C6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9D421A32F32700E607C6 /* CoreData.framework */; };
+		732B9D451A32F41100E607C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9D441A32F41100E607C6 /* SystemConfiguration.framework */; };
+		732B9D471A32F41A00E607C6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9D461A32F41A00E607C6 /* MobileCoreServices.framework */; };
+		732B9D491A32F4AD00E607C6 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9D481A32F4AD00E607C6 /* libresolv.dylib */; };
+		732B9D4B1A32F4C800E607C6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9D4A1A32F4C800E607C6 /* libz.dylib */; };
+		732B9D4E1A33812700E607C6 /* PNCSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 732B9D4D1A33812700E607C6 /* PNCSplashViewController.m */; };
+		732B9D551A3385FC00E607C6 /* PNCContentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 732B9D541A3385FC00E607C6 /* PNCContentManager.m */; };
+		735CB3021A391DBC003522EB /* RecipeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 735CB3011A391DBC003522EB /* RecipeView.xib */; };
+		735CB3061A39204F003522EB /* PNCRecipeDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 735CB3051A39204F003522EB /* PNCRecipeDetailsTableViewCell.m */; };
+		735CB3081A392510003522EB /* RecipeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 735CB3071A392510003522EB /* RecipeHeaderView.xib */; };
+		735CB30E1A39AB4D003522EB /* PNCRecipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 735CB30D1A39AB4D003522EB /* PNCRecipeView.m */; };
+		735CB3111A39DB9E003522EB /* PNCRecipeCollectionDataProviderCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 735CB3101A39DB9E003522EB /* PNCRecipeCollectionDataProviderCollectionViewController.m */; };
+		735CB3131A3A8C7F003522EB /* RecipeDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 735CB3121A3A8C7F003522EB /* RecipeDetailsView.xib */; };
+		735CB3151A3AC9C4003522EB /* headerlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 735CB3141A3AC9C4003522EB /* headerlogo.png */; };
+		735CB3181A3B0392003522EB /* PNCRecipeHeaderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 735CB3171A3B0392003522EB /* PNCRecipeHeaderCollectionViewCell.m */; };
+		73BC6C181A3B910F002A5062 /* RecipeHeaderView1.0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BC6C171A3B910F002A5062 /* RecipeHeaderView1.0.xib */; };
+		73D142471A49635000429F58 /* PNCSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D142461A49635000429F58 /* PNCSectionView.m */; };
+		73D1424C1A49808200429F58 /* PNCSectionSeperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D1424B1A49808200429F58 /* PNCSectionSeperator.m */; };
+		73DDC2D31A35BAB30020FE7F /* PNCRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DDC2D21A35BAB30020FE7F /* PNCRecipe.m */; };
+		73DDC2D61A35BAB40020FE7F /* PNCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DDC2D51A35BAB40020FE7F /* PNCImage.m */; };
+		73DDC2D91A35BAB40020FE7F /* PNCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DDC2D81A35BAB40020FE7F /* PNCCategory.m */; };
+		73DDC2E41A36CBDD0020FE7F /* PNCCoreDataQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DDC2E31A36CBDD0020FE7F /* PNCCoreDataQuery.m */; };
+		73DDC2E71A3712ED0020FE7F /* PNCImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DDC2E61A3712ED0020FE7F /* PNCImageDownloader.m */; };
+		73DDC2EA1A3785E80020FE7F /* PNCCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DDC2E91A3785E80020FE7F /* PNCCategoryTableViewCell.m */; };
+		73DDC2EE1A3834430020FE7F /* PNCRecipeDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DDC2ED1A3834430020FE7F /* PNCRecipeDetailedViewController.m */; };
+		73DE74A31A3883FA004D8942 /* PNCUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DE74A21A3883FA004D8942 /* PNCUtilities.m */; };
+		73DE74AA1A38D486004D8942 /* PNCRecipeDetailedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DE74A91A38D486004D8942 /* PNCRecipeDetailedView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		732B9CDF1A304EF600E607C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 732B9CBD1A304EF600E607C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 732B9CC41A304EF600E607C6;
+			remoteInfo = PeekNCook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		732B9CC51A304EF600E607C6 /* PeekNCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeekNCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		732B9CC91A304EF600E607C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		732B9CCA1A304EF600E607C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		732B9CCC1A304EF600E607C6 /* PNCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNCAppDelegate.h; sourceTree = "<group>"; };
+		732B9CCD1A304EF600E607C6 /* PNCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNCAppDelegate.m; sourceTree = "<group>"; };
+		732B9CCF1A304EF600E607C6 /* PNCDashboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNCDashboardViewController.h; sourceTree = "<group>"; };
+		732B9CD01A304EF600E607C6 /* PNCDashboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNCDashboardViewController.m; sourceTree = "<group>"; };
+		732B9CD31A304EF600E607C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		732B9CD51A304EF600E607C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		732B9CD81A304EF600E607C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		732B9CDE1A304EF600E607C6 /* PeekNCookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeekNCookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		732B9CE31A304EF600E607C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		732B9CE41A304EF600E607C6 /* PeekNCookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeekNCookTests.m; sourceTree = "<group>"; };
+		732B9CF51A306B8300E607C6 /* PNCDashboardCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCDashboardCollectionView.h; sourceTree = "<group>"; };
+		732B9CF61A306B8300E607C6 /* PNCDashboardCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCDashboardCollectionView.m; sourceTree = "<group>"; };
+		732B9CF91A32737800E607C6 /* PNCDashboardDefaultCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCDashboardDefaultCollectionViewCell.h; sourceTree = "<group>"; };
+		732B9CFA1A32737800E607C6 /* PNCDashboardDefaultCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCDashboardDefaultCollectionViewCell.m; sourceTree = "<group>"; };
+		732B9D351A32E9F700E607C6 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = PeekNCook/Frameworks/Quickblox.framework; sourceTree = "<group>"; };
+		732B9D381A32EADA00E607C6 /* PNCCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PNCCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		732B9D3C1A32F11E00E607C6 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		732B9D3E1A32F2FD00E607C6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		732B9D401A32F31800E607C6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		732B9D421A32F32700E607C6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		732B9D441A32F41100E607C6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		732B9D461A32F41A00E607C6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		732B9D481A32F4AD00E607C6 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		732B9D4A1A32F4C800E607C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		732B9D4C1A33812700E607C6 /* PNCSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCSplashViewController.h; sourceTree = "<group>"; };
+		732B9D4D1A33812700E607C6 /* PNCSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCSplashViewController.m; sourceTree = "<group>"; };
+		732B9D531A3385FC00E607C6 /* PNCContentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCContentManager.h; sourceTree = "<group>"; };
+		732B9D541A3385FC00E607C6 /* PNCContentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCContentManager.m; sourceTree = "<group>"; };
+		735CB3011A391DBC003522EB /* RecipeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeView.xib; sourceTree = "<group>"; };
+		735CB3041A39204F003522EB /* PNCRecipeDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCRecipeDetailsTableViewCell.h; sourceTree = "<group>"; };
+		735CB3051A39204F003522EB /* PNCRecipeDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCRecipeDetailsTableViewCell.m; sourceTree = "<group>"; };
+		735CB3071A392510003522EB /* RecipeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeHeaderView.xib; sourceTree = "<group>"; };
+		735CB30C1A39AB4D003522EB /* PNCRecipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCRecipeView.h; sourceTree = "<group>"; };
+		735CB30D1A39AB4D003522EB /* PNCRecipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCRecipeView.m; sourceTree = "<group>"; };
+		735CB30F1A39DB9E003522EB /* PNCRecipeCollectionDataProviderCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCRecipeCollectionDataProviderCollectionViewController.h; sourceTree = "<group>"; };
+		735CB3101A39DB9E003522EB /* PNCRecipeCollectionDataProviderCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCRecipeCollectionDataProviderCollectionViewController.m; sourceTree = "<group>"; };
+		735CB3121A3A8C7F003522EB /* RecipeDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeDetailsView.xib; sourceTree = "<group>"; };
+		735CB3141A3AC9C4003522EB /* headerlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headerlogo.png; sourceTree = "<group>"; };
+		735CB3161A3B0392003522EB /* PNCRecipeHeaderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCRecipeHeaderCollectionViewCell.h; sourceTree = "<group>"; };
+		735CB3171A3B0392003522EB /* PNCRecipeHeaderCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCRecipeHeaderCollectionViewCell.m; sourceTree = "<group>"; };
+		73BC6C171A3B910F002A5062 /* RecipeHeaderView1.0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeHeaderView1.0.xib; sourceTree = "<group>"; };
+		73D142451A49635000429F58 /* PNCSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCSectionView.h; sourceTree = "<group>"; };
+		73D142461A49635000429F58 /* PNCSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCSectionView.m; sourceTree = "<group>"; };
+		73D1424A1A49808200429F58 /* PNCSectionSeperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCSectionSeperator.h; sourceTree = "<group>"; };
+		73D1424B1A49808200429F58 /* PNCSectionSeperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCSectionSeperator.m; sourceTree = "<group>"; };
+		73DDC2D11A35BAB30020FE7F /* PNCRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCRecipe.h; sourceTree = "<group>"; };
+		73DDC2D21A35BAB30020FE7F /* PNCRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCRecipe.m; sourceTree = "<group>"; };
+		73DDC2D41A35BAB40020FE7F /* PNCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCImage.h; sourceTree = "<group>"; };
+		73DDC2D51A35BAB40020FE7F /* PNCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCImage.m; sourceTree = "<group>"; };
+		73DDC2D71A35BAB40020FE7F /* PNCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCCategory.h; sourceTree = "<group>"; };
+		73DDC2D81A35BAB40020FE7F /* PNCCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCCategory.m; sourceTree = "<group>"; };
+		73DDC2E21A36CBDD0020FE7F /* PNCCoreDataQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCCoreDataQuery.h; sourceTree = "<group>"; };
+		73DDC2E31A36CBDD0020FE7F /* PNCCoreDataQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCCoreDataQuery.m; sourceTree = "<group>"; };
+		73DDC2E51A3712ED0020FE7F /* PNCImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCImageDownloader.h; sourceTree = "<group>"; };
+		73DDC2E61A3712ED0020FE7F /* PNCImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCImageDownloader.m; sourceTree = "<group>"; };
+		73DDC2E81A3785E80020FE7F /* PNCCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCCategoryTableViewCell.h; sourceTree = "<group>"; };
+		73DDC2E91A3785E80020FE7F /* PNCCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCCategoryTableViewCell.m; sourceTree = "<group>"; };
+		73DDC2EC1A3834430020FE7F /* PNCRecipeDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCRecipeDetailedViewController.h; sourceTree = "<group>"; };
+		73DDC2ED1A3834430020FE7F /* PNCRecipeDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCRecipeDetailedViewController.m; sourceTree = "<group>"; };
+		73DE74A11A3883FA004D8942 /* PNCUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCUtilities.h; sourceTree = "<group>"; };
+		73DE74A21A3883FA004D8942 /* PNCUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCUtilities.m; sourceTree = "<group>"; };
+		73DE74A81A38D486004D8942 /* PNCRecipeDetailedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCRecipeDetailedView.h; sourceTree = "<group>"; };
+		73DE74A91A38D486004D8942 /* PNCRecipeDetailedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCRecipeDetailedView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		732B9CC21A304EF600E607C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732B9D4B1A32F4C800E607C6 /* libz.dylib in Frameworks */,
+				732B9D491A32F4AD00E607C6 /* libresolv.dylib in Frameworks */,
+				732B9D471A32F41A00E607C6 /* MobileCoreServices.framework in Frameworks */,
+				732B9D451A32F41100E607C6 /* SystemConfiguration.framework in Frameworks */,
+				732B9D431A32F32700E607C6 /* CoreData.framework in Frameworks */,
+				732B9D411A32F31800E607C6 /* Security.framework in Frameworks */,
+				732B9D3F1A32F2FD00E607C6 /* CFNetwork.framework in Frameworks */,
+				732B9D3D1A32F11E00E607C6 /* libxml2.2.dylib in Frameworks */,
+				732B9D361A32E9F700E607C6 /* Quickblox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732B9CDB1A304EF600E607C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		732B9CBC1A304EF600E607C6 = {
+			isa = PBXGroup;
+			children = (
+				732B9CC71A304EF600E607C6 /* Application */,
+				732B9CE11A304EF600E607C6 /* PeekNCookTests */,
+				732B9CC61A304EF600E607C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		732B9CC61A304EF600E607C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				732B9CC51A304EF600E607C6 /* PeekNCook.app */,
+				732B9CDE1A304EF600E607C6 /* PeekNCookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		732B9CC71A304EF600E607C6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				732B9CCC1A304EF600E607C6 /* PNCAppDelegate.h */,
+				732B9CCD1A304EF600E607C6 /* PNCAppDelegate.m */,
+				732B9CD21A304EF600E607C6 /* Main.storyboard */,
+				732B9CF81A326F6D00E607C6 /* Cells */,
+				732B9CEE1A305A2100E607C6 /* Views */,
+				732B9CEF1A305A2D00E607C6 /* Controllers */,
+				732B9CF11A30690000E607C6 /* Model */,
+				732B9D4F1A33855600E607C6 /* Utilities */,
+				732B9CF01A305A3B00E607C6 /* Resources */,
+				732B9D341A32E97200E607C6 /* Frameworks */,
+				732B9CC81A304EF600E607C6 /* Supporting Files */,
+			);
+			name = Application;
+			path = PeekNCook;
+			sourceTree = "<group>";
+		};
+		732B9CC81A304EF600E607C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				732B9CC91A304EF600E607C6 /* Info.plist */,
+				732B9CCA1A304EF600E607C6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		732B9CE11A304EF600E607C6 /* PeekNCookTests */ = {
+			isa = PBXGroup;
+			children = (
+				732B9CE41A304EF600E607C6 /* PeekNCookTests.m */,
+				732B9CE21A304EF600E607C6 /* Supporting Files */,
+			);
+			path = PeekNCookTests;
+			sourceTree = "<group>";
+		};
+		732B9CE21A304EF600E607C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				732B9CE31A304EF600E607C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		732B9CEE1A305A2100E607C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73D142441A49631800429F58 /* Helper */,
+				73BC6C191A3C333D002A5062 /* Details */,
+				73DE74A71A38D1AF004D8942 /* Detailed */,
+				732B9CF51A306B8300E607C6 /* PNCDashboardCollectionView.h */,
+				732B9CF61A306B8300E607C6 /* PNCDashboardCollectionView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		732B9CEF1A305A2D00E607C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73DE74A41A38D10F004D8942 /* Splash */,
+				73DDC2EB1A3833F60020FE7F /* Detailed */,
+				732B9CCF1A304EF600E607C6 /* PNCDashboardViewController.h */,
+				732B9CD01A304EF600E607C6 /* PNCDashboardViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		732B9CF01A305A3B00E607C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				735CB3141A3AC9C4003522EB /* headerlogo.png */,
+				732B9CD71A304EF600E607C6 /* LaunchScreen.xib */,
+				732B9CD51A304EF600E607C6 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		732B9CF11A30690000E607C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				732B9D371A32EADA00E607C6 /* PNCCoreDataModel.xcdatamodeld */,
+				73DDC2D71A35BAB40020FE7F /* PNCCategory.h */,
+				73DDC2D81A35BAB40020FE7F /* PNCCategory.m */,
+				73DDC2D41A35BAB40020FE7F /* PNCImage.h */,
+				73DDC2D51A35BAB40020FE7F /* PNCImage.m */,
+				73DDC2D11A35BAB30020FE7F /* PNCRecipe.h */,
+				73DDC2D21A35BAB30020FE7F /* PNCRecipe.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		732B9CF81A326F6D00E607C6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				735CB3031A39200D003522EB /* Detailed */,
+				732B9CF91A32737800E607C6 /* PNCDashboardDefaultCollectionViewCell.h */,
+				732B9CFA1A32737800E607C6 /* PNCDashboardDefaultCollectionViewCell.m */,
+				73DDC2E81A3785E80020FE7F /* PNCCategoryTableViewCell.h */,
+				73DDC2E91A3785E80020FE7F /* PNCCategoryTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		732B9D341A32E97200E607C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				732B9D4A1A32F4C800E607C6 /* libz.dylib */,
+				732B9D481A32F4AD00E607C6 /* libresolv.dylib */,
+				732B9D3C1A32F11E00E607C6 /* libxml2.2.dylib */,
+				732B9D461A32F41A00E607C6 /* MobileCoreServices.framework */,
+				732B9D441A32F41100E607C6 /* SystemConfiguration.framework */,
+				732B9D421A32F32700E607C6 /* CoreData.framework */,
+				732B9D401A32F31800E607C6 /* Security.framework */,
+				732B9D3E1A32F2FD00E607C6 /* CFNetwork.framework */,
+				732B9D351A32E9F700E607C6 /* Quickblox.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		732B9D4F1A33855600E607C6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				732B9D531A3385FC00E607C6 /* PNCContentManager.h */,
+				732B9D541A3385FC00E607C6 /* PNCContentManager.m */,
+				73DDC2E21A36CBDD0020FE7F /* PNCCoreDataQuery.h */,
+				73DDC2E31A36CBDD0020FE7F /* PNCCoreDataQuery.m */,
+				73DDC2E51A3712ED0020FE7F /* PNCImageDownloader.h */,
+				73DDC2E61A3712ED0020FE7F /* PNCImageDownloader.m */,
+				73DE74A11A3883FA004D8942 /* PNCUtilities.h */,
+				73DE74A21A3883FA004D8942 /* PNCUtilities.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		735CB3031A39200D003522EB /* Detailed */ = {
+			isa = PBXGroup;
+			children = (
+				735CB3041A39204F003522EB /* PNCRecipeDetailsTableViewCell.h */,
+				735CB3051A39204F003522EB /* PNCRecipeDetailsTableViewCell.m */,
+				735CB3161A3B0392003522EB /* PNCRecipeHeaderCollectionViewCell.h */,
+				735CB3171A3B0392003522EB /* PNCRecipeHeaderCollectionViewCell.m */,
+			);
+			name = Detailed;
+			sourceTree = "<group>";
+		};
+		73BC6C191A3C333D002A5062 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Details;
+			sourceTree = "<group>";
+		};
+		73D142441A49631800429F58 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				73D142451A49635000429F58 /* PNCSectionView.h */,
+				73D142461A49635000429F58 /* PNCSectionView.m */,
+				73D1424A1A49808200429F58 /* PNCSectionSeperator.h */,
+				73D1424B1A49808200429F58 /* PNCSectionSeperator.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		73DDC2EB1A3833F60020FE7F /* Detailed */ = {
+			isa = PBXGroup;
+			children = (
+				73DDC2EC1A3834430020FE7F /* PNCRecipeDetailedViewController.h */,
+				73DDC2ED1A3834430020FE7F /* PNCRecipeDetailedViewController.m */,
+			);
+			name = Detailed;
+			sourceTree = "<group>";
+		};
+		73DE74A41A38D10F004D8942 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				732B9D4C1A33812700E607C6 /* PNCSplashViewController.h */,
+				732B9D4D1A33812700E607C6 /* PNCSplashViewController.m */,
+			);
+			name = Splash;
+			sourceTree = "<group>";
+		};
+		73DE74A71A38D1AF004D8942 /* Detailed */ = {
+			isa = PBXGroup;
+			children = (
+				735CB30C1A39AB4D003522EB /* PNCRecipeView.h */,
+				735CB30D1A39AB4D003522EB /* PNCRecipeView.m */,
+				73DE74A81A38D486004D8942 /* PNCRecipeDetailedView.h */,
+				73DE74A91A38D486004D8942 /* PNCRecipeDetailedView.m */,
+				735CB3011A391DBC003522EB /* RecipeView.xib */,
+				735CB3071A392510003522EB /* RecipeHeaderView.xib */,
+				735CB30F1A39DB9E003522EB /* PNCRecipeCollectionDataProviderCollectionViewController.h */,
+				735CB3101A39DB9E003522EB /* PNCRecipeCollectionDataProviderCollectionViewController.m */,
+				735CB3121A3A8C7F003522EB /* RecipeDetailsView.xib */,
+				73BC6C171A3B910F002A5062 /* RecipeHeaderView1.0.xib */,
+			);
+			name = Detailed;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		732B9CC41A304EF600E607C6 /* PeekNCook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 732B9CE81A304EF600E607C6 /* Build configuration list for PBXNativeTarget "PeekNCook" */;
+			buildPhases = (
+				732B9CC11A304EF600E607C6 /* Sources */,
+				732B9CC21A304EF600E607C6 /* Frameworks */,
+				732B9CC31A304EF600E607C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeekNCook;
+			productName = PeekNCook;
+			productReference = 732B9CC51A304EF600E607C6 /* PeekNCook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		732B9CDD1A304EF600E607C6 /* PeekNCookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 732B9CEB1A304EF600E607C6 /* Build configuration list for PBXNativeTarget "PeekNCookTests" */;
+			buildPhases = (
+				732B9CDA1A304EF600E607C6 /* Sources */,
+				732B9CDB1A304EF600E607C6 /* Frameworks */,
+				732B9CDC1A304EF600E607C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				732B9CE01A304EF600E607C6 /* PBXTargetDependency */,
+			);
+			name = PeekNCookTests;
+			productName = PeekNCookTests;
+			productReference = 732B9CDE1A304EF600E607C6 /* PeekNCookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		732B9CBD1A304EF600E607C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = PeekNCook;
+				TargetAttributes = {
+					732B9CC41A304EF600E607C6 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					732B9CDD1A304EF600E607C6 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 732B9CC41A304EF600E607C6;
+					};
+				};
+			};
+			buildConfigurationList = 732B9CC01A304EF600E607C6 /* Build configuration list for PBXProject "PeekNCook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 732B9CBC1A304EF600E607C6;
+			productRefGroup = 732B9CC61A304EF600E607C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				732B9CC41A304EF600E607C6 /* PeekNCook */,
+				732B9CDD1A304EF600E607C6 /* PeekNCookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		732B9CC31A304EF600E607C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				735CB3151A3AC9C4003522EB /* headerlogo.png in Resources */,
+				732B9CD41A304EF600E607C6 /* Main.storyboard in Resources */,
+				732B9CD91A304EF600E607C6 /* LaunchScreen.xib in Resources */,
+				73BC6C181A3B910F002A5062 /* RecipeHeaderView1.0.xib in Resources */,
+				735CB3081A392510003522EB /* RecipeHeaderView.xib in Resources */,
+				735CB3131A3A8C7F003522EB /* RecipeDetailsView.xib in Resources */,
+				735CB3021A391DBC003522EB /* RecipeView.xib in Resources */,
+				732B9CD61A304EF600E607C6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732B9CDC1A304EF600E607C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		732B9CC11A304EF600E607C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DDC2E71A3712ED0020FE7F /* PNCImageDownloader.m in Sources */,
+				73DDC2D31A35BAB30020FE7F /* PNCRecipe.m in Sources */,
+				735CB3181A3B0392003522EB /* PNCRecipeHeaderCollectionViewCell.m in Sources */,
+				732B9CD11A304EF600E607C6 /* PNCDashboardViewController.m in Sources */,
+				73D142471A49635000429F58 /* PNCSectionView.m in Sources */,
+				73DDC2D91A35BAB40020FE7F /* PNCCategory.m in Sources */,
+				732B9CFB1A32737800E607C6 /* PNCDashboardDefaultCollectionViewCell.m in Sources */,
+				73D1424C1A49808200429F58 /* PNCSectionSeperator.m in Sources */,
+				732B9D391A32EADA00E607C6 /* PNCCoreDataModel.xcdatamodeld in Sources */,
+				73DE74A31A3883FA004D8942 /* PNCUtilities.m in Sources */,
+				732B9CCE1A304EF600E607C6 /* PNCAppDelegate.m in Sources */,
+				732B9CCB1A304EF600E607C6 /* main.m in Sources */,
+				73DE74AA1A38D486004D8942 /* PNCRecipeDetailedView.m in Sources */,
+				732B9D551A3385FC00E607C6 /* PNCContentManager.m in Sources */,
+				73DDC2EA1A3785E80020FE7F /* PNCCategoryTableViewCell.m in Sources */,
+				73DDC2D61A35BAB40020FE7F /* PNCImage.m in Sources */,
+				735CB30E1A39AB4D003522EB /* PNCRecipeView.m in Sources */,
+				732B9CF71A306B8300E607C6 /* PNCDashboardCollectionView.m in Sources */,
+				732B9D4E1A33812700E607C6 /* PNCSplashViewController.m in Sources */,
+				73DDC2EE1A3834430020FE7F /* PNCRecipeDetailedViewController.m in Sources */,
+				735CB3111A39DB9E003522EB /* PNCRecipeCollectionDataProviderCollectionViewController.m in Sources */,
+				735CB3061A39204F003522EB /* PNCRecipeDetailsTableViewCell.m in Sources */,
+				73DDC2E41A36CBDD0020FE7F /* PNCCoreDataQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732B9CDA1A304EF600E607C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732B9CE51A304EF600E607C6 /* PeekNCookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		732B9CE01A304EF600E607C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 732B9CC41A304EF600E607C6 /* PeekNCook */;
+			targetProxy = 732B9CDF1A304EF600E607C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		732B9CD21A304EF600E607C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				732B9CD31A304EF600E607C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		732B9CD71A304EF600E607C6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				732B9CD81A304EF600E607C6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		732B9CE61A304EF600E607C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		732B9CE71A304EF600E607C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		732B9CE91A304EF600E607C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/work/Projects/AppleDeveloper/quickblox-ios-sdk-master/Framework",
+					"$(PROJECT_DIR)/PeekNCook/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = PeekNCook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lxml2",
+					"-lstdc++",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		732B9CEA1A304EF600E607C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/work/Projects/AppleDeveloper/quickblox-ios-sdk-master/Framework",
+					"$(PROJECT_DIR)/PeekNCook/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = PeekNCook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-lstdc++",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		732B9CEC1A304EF600E607C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PeekNCookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeekNCook.app/PeekNCook";
+			};
+			name = Debug;
+		};
+		732B9CED1A304EF600E607C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PeekNCookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeekNCook.app/PeekNCook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		732B9CC01A304EF600E607C6 /* Build configuration list for PBXProject "PeekNCook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732B9CE61A304EF600E607C6 /* Debug */,
+				732B9CE71A304EF600E607C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		732B9CE81A304EF600E607C6 /* Build configuration list for PBXNativeTarget "PeekNCook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732B9CE91A304EF600E607C6 /* Debug */,
+				732B9CEA1A304EF600E607C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		732B9CEB1A304EF600E607C6 /* Build configuration list for PBXNativeTarget "PeekNCookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732B9CEC1A304EF600E607C6 /* Debug */,
+				732B9CED1A304EF600E607C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		732B9D371A32EADA00E607C6 /* PNCCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				732B9D381A32EADA00E607C6 /* PNCCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 732B9D381A32EADA00E607C6 /* PNCCoreDataModel.xcdatamodel */;
+			path = PNCCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 732B9CBD1A304EF600E607C6 /* Project object */;
+}
